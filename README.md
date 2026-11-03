@@ -15,10 +15,12 @@ A small DeepSeek Harness plugin that hides unused panels from the left rail, gro
 ## 安装
 
 ```sh
-dsh plugin --profile desktop add dsh-panel-organizer
+dsh plugin --profile desktop add Asterlyra/dsh-panel-organizer
 ```
 
-或在 Harness 里打开 **设置 → 插件 → 添加插件**，填入 `dsh-panel-organizer`。安装后刷新页面，入口在 **设置 → 插件 → 面板整理**。
+或在 Harness 里打开 **设置 → 插件 → 添加插件**，填入仓库地址 `Asterlyra/dsh-panel-organizer`。安装后刷新页面，入口在 **设置 → 插件 → 面板整理**。
+
+> 从 GitHub 源码安装。npm 包 `dsh-panel-organizer` 发布后，可直接 `dsh plugin add dsh-panel-organizer`；预构建 tarball 也挂在 [Releases](https://github.com/Asterlyra/dsh-panel-organizer/releases) 上。
 
 ## 使用
 
