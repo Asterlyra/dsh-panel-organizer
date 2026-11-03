@@ -1,0 +1,49 @@
+{
+  "name": "dsh-panel-organizer",
+  "version": "0.4.0",
+  "type": "module",
+  "description": "Hide unused panels from the left sidebar of DeepSeek Harness, grouped by origin. The rail's More button expands every panel and folds them back.",
+  "license": "MIT",
+  "author": "Asterlyra",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Asterlyra/dsh-panel-organizer.git"
+  },
+  "homepage": "https://github.com/Asterlyra/dsh-panel-organizer#readme",
+  "bugs": {
+    "url": "https://github.com/Asterlyra/dsh-panel-organizer/issues"
+  },
+  "keywords": [
+    "dsh",
+    "dsh-plugin",
+    "deepseek-harness",
+    "sidebar",
+    "panel",
+    "ui"
+  ],
+  "exports": {
+    ".": "./index.js",
+    "./client": "./client.js",
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "index.js",
+    "client.js",
+    "cordis.patch.yml",
+    "locale/*.json",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    },
+    "client": {
+      "platform": "web",
+      "immediately": true,
+      "inject": [
+        "@deepseek-ai/dsh-client-ui-sidebar"
+      ]
+    }
+  }
+}
